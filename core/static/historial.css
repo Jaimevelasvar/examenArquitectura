@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4c57bb;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(119, 121, 240);
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+tbody tr:hover {
+    background-color: aliceblue;
+    cursor: default;
+}
+
+#sistema {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    display: flex;
+    height: 90%;
+    width: 65%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px 1px;
+}
+
+h1 {
+    margin-top: 25px;
+    color: #4c57bb;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 1500px){
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    thead {
+        background-color: rgb(119, 121, 240);
+    }
+    
+    th {
+        padding: 10px 7px;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    
+    td {
+        padding: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    #sistema {
+        height: 90%;
+        width: 90%;
+    }
+}

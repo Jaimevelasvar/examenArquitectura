@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#contenido {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4c57bb;
+}
+
+#formulario {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 450px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px 1px;
+    justify-content: center;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    column-gap: 60px;
+    background-color: aqua;
+    border-radius: 5px;
+    width: 50%;
+    padding: 7px;
+}
+
+#opcion1,
+#opcion2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#orden {
+    display: flex;
+    flex-direction: row;
+}
+
+#checkbox {
+    margin: 5px;
+    display: flex;
+}
+#checkbox1, #checkbox2 {
+    margin: 5px;
+    display: flex;
+}
+
+#ropa {
+    width: 90px;
+}
+
+#titulo {
+    font-size: 60px;
+}
+
+#texto {
+    width: 60%;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #414ba3;
+    text-align: center;
+}
+
+#texto2 {
+    width: 10%;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #414ba3;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 30%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: #414ba3;
+}
+
+#registrar:hover {
+    background-color: #1b247c;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+select {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #414ba3;
+    margin-top: 5px;
+    width: auto;
+}
+
+#hola {
+    margin-top: 10px;
+}
+.form-group{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+input{
+    border-radius: 5px;
+    text-align: center;
+}
+
+#div_id_tipo_transaccion, #div_id_estado_ropa{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 10px;
+}
+
+#div_id_estado_ropa{
+    display: flex;
+    column-gap: 33px;
+}
+
+#div_id_tipo_transaccion, #div_id_estado_ropa > label{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    #formulario {
+        padding: 5px;
+        height: 60%;
+        text-align: center;
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.8s;
+    }
+
+    #titulo {
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    #opciones {
+        column-gap: 30px;
+    }
+
+    button {
+        width: 40%;
+    }
+}

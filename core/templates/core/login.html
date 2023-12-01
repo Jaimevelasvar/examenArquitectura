@@ -1,0 +1,35 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="contenido">
+        <card id="login">
+            <div id="imagen">
+                <img src="{% static 'img/logo-06.png'%}" alt="">
+            </div>
+            <form action="" method="post">
+
+                <h1>
+                    Bienvenido
+                </h1>
+                {% csrf_token %}    
+                {{form | crispy}}
+                <div id="boton">
+                <button type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+        </card>
+    </section>
+</body> 
+</html> 
